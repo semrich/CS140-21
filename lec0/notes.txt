@@ -1,0 +1,34 @@
+Prof. Scott
+Lecture date:  1/21/21
+
+* examples from CS102  ->  hello world, input output, other basics 
+
+Brief discussion of stream operators, preprocessor, namespaces
+
+You should also read Chapters 2 and 3 (if you were not planning on
+already) to familiarize yourself with C++ syntax after class.
+
+NOTE!!!  main function must always exist, just like in C!
+
+
+Additional examples to show similarities with C/help with prelab:
+-------------------------
+
+-> add.cc :    variables, input output, sums
+-> stat.cpp:   arrays, for loops, brief into to C++ strings
+-> digits.cc:  while loops
+
+
+Associated reading from text:
+-------------------------
+
+Review Figures 1.6-1.11 and associated text just in case, especially
+if you have not had Fundamentals I.
+
+First C++ program:  Section 2.2 in D&D
+-	main function and output streams
+-	see hello.cc in the lecture notes
+
+Second C++ program:  Section 2.4
+-	adding two numbers; sample code in lecture notes as add.cc
+
