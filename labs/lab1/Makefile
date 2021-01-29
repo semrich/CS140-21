@@ -4,7 +4,7 @@ SHELL=		bash
 
 all:		solution
 
-gold:	solution.cpp
+toe:	solution.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
