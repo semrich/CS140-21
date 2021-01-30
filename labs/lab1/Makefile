@@ -2,13 +2,17 @@ CXX=		g++
 CXXFLAGS=	-g -Wall -std=gnu++11
 SHELL=		bash
 
-all:		solution
+all:		toecheck
 
+<<<<<<< HEAD
 toe:	solution.cpp
+=======
+gold:	toecheck.cpp
+>>>>>>> 3ad291432fa4f7bc0d114861646bc40f2b19b78e
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
-	rm -f solution
+	rm -f toecheck
 
 # test:		test-output7 test-output2 
 test:		test-output
@@ -16,11 +20,18 @@ test:		test-output
 #test-output7:	solution
 test-output:	solution
 
+<<<<<<< HEAD
 	@echo Testing input/output 1...
 	@diff --suppress-common-lines -y <(./solution < input7) output7
 #test-output2:   solution
+=======
+test-output1:	toecheck
+	@echo Testing input/output 1...
+	@diff --suppress-common-lines -y <(./toecheck < input1) output1
+test-output2:   toecheck
+>>>>>>> 3ad291432fa4f7bc0d114861646bc40f2b19b78e
 	@echo Testing input/output 2...
-	@diff --suppress-common-lines -y <(./solution < input2) output2
+	@diff --suppress-common-lines -y <(./toecheck < input2) output2
 
 
 
