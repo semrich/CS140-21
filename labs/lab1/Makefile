@@ -37,6 +37,6 @@ test-output6:   solution
 test-output7:	solution
 	@echo Testing input/output7...
 	@diff --suppress-common-lines -y <(./solution < input7) output7
-#test-output8:   solution
+test-output8:   solution
 	@echo Testing input/output8...
 	@diff --suppress-common-lines -y <(./solution < input8) output8
