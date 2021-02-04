@@ -13,7 +13,7 @@ bigwhite:	bigwhite.cpp
 neg:	neg.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-hfkip:	hflip.cpp
+hflip:	hflip.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
