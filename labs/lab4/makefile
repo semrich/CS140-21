@@ -10,7 +10,7 @@ main:	main.o CardDeck.o
 main.o:	main.cpp
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
-CardDeck:	CardDeck.cpp CardDeck.h
+CardDeck.o:	CardDeck.cpp CardDeck.h
 	$(CXX) $(CXXFLAGS) -c CardDeck.cpp
 
 clean:
