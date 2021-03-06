@@ -4,20 +4,27 @@ SHELL=		bash
 
 all:		solution
 
-solution:	solution.cpp
+solution:	main.o Sudoku.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-clean:
-	rm -f solution
+main.o: main.cpp
+	$(CXX) $(CXXFLAGS) -c main.cpp
 
-test:		test-easy  test-medium
+
+Sudoku.o:      Sudoku.cpp Sudoku.h
+	$(CXX) $(CXXFLAGS) -c Sudoku.cpp
+
+clean:
+	rm -f solution *.o
+
+test:		test-easy
 
 test-easy:	solution
-	@echo Testing easy input/output...
+	@echo Testing input/output 1...
 	@diff --suppress-common-lines -y <(./solution < easy.txt) output1
 
 test-medium:   solution
-	@echo Testing medium input/output...
+	@echo Testing input/output 2...
 	@diff --suppress-common-lines -y <(./solution < medium.txt) output2
 
 ec:	solution
