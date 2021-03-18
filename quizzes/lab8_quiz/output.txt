@@ -1,0 +1,9 @@
+Give me a string(no spaces): -> You entered: Hello_world!
+Encoded Input: 48656c6c6f5f776f726c6421
+Decoded Input: Hello_world!
+Give me a string(no spaces): -> You entered: The_cake_is_a_lie
+Encoded Input: 5468655f63616b655f69735f615f6c6965
+Decoded Input: The_cake_is_a_lie
+Give me a string(no spaces): -> You entered: All_your_base_are_belong_to_us
+Encoded Input: 416c6c5f796f75725f626173655f6172655f62656c6f6e675f746f5f7573
+Decoded Input: All_your_base_are_belong_to_us
